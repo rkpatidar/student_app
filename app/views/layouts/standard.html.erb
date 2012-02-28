@@ -1,0 +1,29 @@
+<%= stylesheet_link_tag 'application' %>
+  <%= javascript_include_tag "application" %>
+  <div class="header">
+    <h1>Student Management</h1>
+  </div>
+
+  <div class="menu">
+  
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <%if current_user.nil?%><li><%= link_to 'Login', students_login_path %></li><%end%>
+    <%unless current_user.nil? then if current_user.role=="l" then%><li><%= link_to 'AddBook', new_book_path %></li><%end end %>
+    <%unless current_user.nil? then if current_user.role=="l" then%><li><%= link_to 'IssueBook', issuedbook_issuebook_path%></li><%end end%>
+    <%unless current_user.nil? then if current_user.role=="a" then%><li><%=link_to 'New Student', new_student_path %></li><%end end%>
+     <%unless current_user.nil? then if current_user.role=='a' then%><li><%= link_to 'Students List',students_path%></li><%end end%>
+     <%unless current_user.nil? then if current_user.role=='l' then%><li><%= link_to 'Books List',book_index_path%></li><%end end%>
+     <%unless current_user.nil? then if current_user.role=='l' then%><li><%= link_to 'Submit book',issuedbook_submitbook_path%></li><%end end%>
+   
+    <%unless current_user.nil?%><li><%= link_to 'Logout',students_logout_path%></li><%end%>
+    <%unless current_user.nil?%><li class="welcome"><%=(current_user.first_name+" " +current_user.last_name).capitalize %> </li><%end%>
+ </ul> 
+ 
+  </div>
+
+  <div class="mid">
+    <%= yield -%>
+  </div>
+
+

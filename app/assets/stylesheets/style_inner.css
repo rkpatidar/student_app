@@ -1,0 +1,119 @@
+						/*menu bar*/
+.menu
+{
+    width:100%;
+    height:9%;
+    background-color:#FFFF00;
+    padding-left:0px;
+    padding-top:1px;        
+}
+.menu ul
+{
+    list-style-type:none;    
+}
+.menu li
+{
+    float:left;
+}
+
+.menu ul li
+{
+    float:left;
+}
+.menu li li
+{
+    list-style:none;
+    display:list-item;
+}
+
+.menu li a
+{
+    margin:0px;	
+    display:block;
+    width:auto;
+    height:auto;
+    padding:2px;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:1em;
+}
+.menu li a:link,a:visited
+{
+    color:yellow;
+    background-color:#98bf21;
+}
+.menu li a:hover,a:active
+{
+    background-color:#7A991A;
+}
+
+.menu li ul
+{
+    position: absolute;
+    display: none;  
+    z-index:999;
+}
+.menu li:hover ul
+{
+    display:inline;
+    display:block;
+}
+
+						/*side_bar*/
+.side_bar_left
+{
+    width:20%;
+    height:58%;
+    position:absolute;
+    top:28%;
+    border:solid;
+    border-color:green;
+    margin-top:10px;
+}
+
+.side_bar_right
+{
+    width:20%;
+    height:58%;
+    position:absolute;
+    top:28%;
+    left:79%;
+    border:solid;
+    border-color:green;
+    margin-top:10px;
+}
+
+						/*central_bar*/
+.central_bar
+{
+    width:56%;
+    height:56%;
+    border:solid;
+    border-color:red;
+    position:absolute;
+    top:28%;
+    left:21.5%;
+    padding:5px;
+    margin-top:10px;
+}
+.central_bar p
+{
+    margin:5px;
+}
+.central_bar p label
+{
+    position:absolute;
+    left:50%;
+}
+
+.central_bar select,input,textarea
+{
+    position:absolute;
+    left:50%;
+}
+
+
+.central_bar label
+{
+    margin-left:15%;
+}

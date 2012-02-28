@@ -1,0 +1,32 @@
+<%= javascript_include_tag "application" %>
+<%=form_tag({:controller => "issuedbook", :action => "saveissuebook"}, :method => "post", :class => "nifty_form") do%>
+ 
+  <div class="form_content">
+    <% unless notice.nil?%>
+      <%=javascript_tag "alert('Book issued successfully')"%>
+    <% end %>
+      
+    <h2 >Select Details Here</h2>
+    <div class="field1"> 
+      <%= label_tag(:q, "Email:") %>
+    </div>
+    <div id="email">
+      <%=collection_select(:issuedbook, :student_id, allstudent, :id, :email, :prompt => 'Select email')%>
+    </div>
+    <div class="field2"> 
+      <%= label_tag(:q, "Books:") %>      
+    </div>
+    <div id="password">
+      <%unless remaining_books.empty? then%>
+        <%=collection_select(:issuedbook, :book_id, remaining_books, :id, :book_name, :prompt => 'Select Book')%>
+      <%else %>
+        <%=javascript_tag "alert('No books available for issue')"%>
+       <%end%>       
+    </div>
+    <div id="actions">
+      <%= submit_tag("Issue book") %>
+    </div>
+  </div>
+<% end%>
+
+

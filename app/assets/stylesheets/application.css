@@ -1,0 +1,173 @@
+div.header
+{
+  position:absolute;
+  top:0%;
+  width:100%;
+  height:15%;
+  background-color:#3B5998;
+}
+
+div.mid
+{
+  position:absolute;
+  top:21.1%;
+  width:100%;
+  height:59%;
+}
+
+h1
+{
+  color:white;
+  text-align:center;
+}
+div.footer
+{
+  float:bottom;
+  width:100%;
+  height:50px;
+  background-color:#3B5998;
+}
+
+div.menu
+{
+  position:absolute;
+  top:15.5%;
+  width:100%;
+  height:5%;
+  background-color:#3090C7;
+}
+
+ul
+{
+  margin:5px;
+  padding:0px;
+}
+
+li
+{
+  display:inline;
+  margin-left:15px;
+  margin-right:15px;
+}
+
+.a
+{
+  text-decoration:none;
+}
+a:link
+{
+  color:black;
+}    
+a:hover
+{
+  color:white;
+} 
+
+.form_content
+{
+  position:absolute;
+  left:57%;
+  width:40%;
+  height:100%;
+  margin-left:0px;
+  padding-left:20px;
+  padding-top:0px;
+  #background-color:pink;
+}
+
+.field1
+{
+ float:left; 
+ 
+
+}
+
+.field2
+{
+   float:left;
+}
+
+.field3
+{
+   float:left;
+}
+.field4
+{
+  float:left;
+}
+.field5
+{
+  float:left;
+}
+.field6
+{
+  float:left;
+}
+.field7
+{
+  float:left;
+}
+
+.field8
+{
+  float:left;
+}
+
+
+
+#actions
+{
+  margin-left:100px;
+}
+
+
+#remember_me
+{
+  margin-left:15px;
+}
+#user
+{
+  margin-left:100px;
+}
+#password
+{
+  margin-left:100px;
+}
+h2
+{
+  margin-left:100px;
+  color:#3B5998;
+}
+
+#role
+{
+margin-left:100px;
+}
+#email
+{
+  margin-left:100px;
+}
+#first_name
+{
+margin-left:100px;
+}
+#last_name
+{
+margin-left:100px;
+}
+
+#address
+{
+margin-left:100px;
+}
+#college
+{
+margin-left:100px;
+}
+
+
+li.welcome
+{
+float:right;
+}
+

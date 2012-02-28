@@ -1,0 +1,41 @@
+<%= stylesheet_link_tag 'application' %>
+<%= form_for @student, :url => { :action => "check_login" } do |f|%>
+<% if @student.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@s.errors.count, "error") %> prohibited this student from being saved:</h2>
+      <ul>
+      <% @student.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ 
+    <div class="form_content">
+        <h2 >Login Here</h2>
+        <div class="field1"> 
+          <%= f.label :user %>
+        </div>
+        <div id="user">
+          <%= f.text_field :user %>
+        </div>
+        <div class="field2"> 
+          <%= f.label :password %>
+        </div>
+        <div id="password">
+          <%= f.password_field :password %>
+        </div>
+        <div class="field3">
+          <%= label_tag(:remember_me, "Remember") %>
+        </div>
+        <div id="remember_me">
+          <%= check_box_tag(:remember_me) %>
+        </div>
+        <div id="actions">
+          <%= f.submit 'Login' %>
+        </div>
+    </div>
+    <center><b><%= notice %></b></center>
+<% end %>
+

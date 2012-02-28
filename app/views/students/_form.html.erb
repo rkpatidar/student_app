@@ -1,0 +1,69 @@
+<%= form_for(@student) do |f| %>
+  <% if @student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+        <% @student.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <div class="form_content">
+    <h2 >Enter Details Here</h2>
+    <div class="field1"> 
+      <%= f.label :user %><br />
+    </div>
+    <div id="user">
+      <%= f.text_field :user %>
+    </div>
+    <div class="field2"> 
+      <%= f.label :password %>
+    </div>
+    <div id="password">
+      <%= f.password_field :password %>
+    </div>
+    <div class="field3"> 
+      <%= f.label :role %>
+    </div>
+    <div id="role">
+      <%= f.select :role, options_for_select([["Admin", "a"], ["User", "u"],["Librarian", "l"]]) %>
+    </div>
+    <div class="field4">
+      <%= f.label :email %>
+    </div>
+    <div id="email">
+      <%= f.text_field :email %>
+    </div>
+    <div class="field5">
+      <%= f.label :first_name %>
+    </div>
+    <div id="first_name">
+      <%= f.text_field :first_name %>
+    </div>
+    <div class="field6">
+      <%= f.label :last_name %>
+    </div>
+    <div id="last_name">
+      <%= f.text_field :last_name %>
+    </div>
+    <div class="field7">
+      <%= f.label :address %>
+    </div>
+    <div id="address">
+      <%= f.text_field :address %>
+    </div>
+    <div class="field8">
+      <%= f.label :college %>
+    </div>
+    <div id="college">
+      <%= f.text_field :college %>
+    </div>
+    <div id="actions">
+      <%= f.submit %>
+    </div>
+  </div>
+<% end %>
+

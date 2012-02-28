@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StudentApp</title>
+    <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "prototype" %>
+    <%= javascript_include_tag "rails" %>
+    <%= javascript_include_tag "login_page" %>
+    <%= stylesheet_link_tag "scaffold" %>
+    <%= stylesheet_link_tag "home" %>
+    <%= csrf_meta_tag %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

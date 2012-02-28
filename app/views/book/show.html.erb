@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+<table border=1 align="center">
+  <tr>
+    <td><b>Book_name:</b></td>
+     <td> <%= @book.book_name %></td>
+  </tr>
+
+  <tr>
+    <td><b>Author</b></td>
+    <td>  <%= @book.author %></td>
+  </tr>
+
+  <tr>
+    <td><b>Edition</b></td>
+    <td><%= @book.edition %></td>
+  </tr>
+
+  <tr>
+    <td><b>Publisher</b></td>
+    <td>    <%= @book.publisher %></td>
+  </tr>
+
+  <tr>
+    <td colspan=2><b><%= link_to 'Edit', edit_student_path(@student) %></b></td>
+  </tr>
+</table>
+
+
+

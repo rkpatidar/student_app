@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag 'application' %>
+<%= javascript_include_tag "application" %>
+  <div class="header">
+    <h1>Student Management</h1>
+  </div>
+
+  <div class="menu">
+  <ul>
+  <li><%= link_to 'Home', root_path %></li>
+  <li><% if current_user.role == "a"%><%= link_to 'New Student', new_student_path %><%end%></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+  <li><%= link_to 'Logout',students_logout_path%></li>
+  </ul> 
+  </div>
+
+  <div class="mid">
+    <%= yield -%>
+    </div>
+ 

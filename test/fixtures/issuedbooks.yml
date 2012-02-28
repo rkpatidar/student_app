@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  book_id: 1
+  student_id: 1
+  issued_date: 2012-02-24
+  submited_date: 2012-02-24
+  is_issued: false
+
+two:
+  book_id: 1
+  student_id: 1
+  issued_date: 2012-02-24
+  submited_date: 2012-02-24
+  is_issued: false

@@ -1,0 +1,29 @@
+<%= notice %>
+<center><h2>Listing books</h2>
+  <table border=1>
+    <tr>
+      <th>book_name</th>
+      <th>Author</th>
+      <th>Edition</th>
+      <th>Publisher</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <% @book.each do |book| %>
+     <tr class="<%= cycle("even", "odd") %>">
+        <td><%= book.book_name %></td>
+        <td><%= book.author %></td>
+        <td><%= book.edition %></td>
+        <td><%= book.publisher %></td>
+        <td><%= link_to 'Show', book %></td>
+        <td><%= link_to 'Edit', edit_book_path(book) %> </td>
+        <td><%= link_to 'Destroy',book, :method =>:delete, :confirm => 'Are you sure?' %></td>
+      </tr>
+    <% end %>
+  </table>
+</center>
+
+
+
+

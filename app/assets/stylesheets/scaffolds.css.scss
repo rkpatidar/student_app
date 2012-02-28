@@ -1,0 +1,166 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #000;
+  &:visited {
+    color: #666; }
+  &:hover {
+    color: #fff;
+    background-color: #000; } }
+
+
+
+#notice {
+  color: green; }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; }
+  ul li {
+    font-size: 12px;
+    list-style: square; } }
+    
+    #user
+    {
+    position:absolute;
+    top:20%;
+    left:30%;
+    }
+     #password
+    {
+    position:absolute;
+    top:25%;
+    left:30%;
+    }
+     #role
+    {
+    position:absolute;
+    top:30%;
+    left:30%;
+    }
+    
+    #first_name
+    {
+    position:absolute;
+    top:35%;
+    left:30%;
+    }
+    
+    #last_name
+    {
+    position:absolute;
+    top:40%;
+    left:30%;
+    }
+    
+    #address
+    {
+    position:absolute;
+    top:45%;
+    left:30%;
+    }
+    #college
+    {
+    position:absolute;
+    top:50%;
+    left:30%;
+    }
+    .actions
+    {
+    position:absolute;
+    top:55%;
+    left:30%;
+    }
+    
+    .field1
+    {
+    position:absolute;
+    top:21%;
+    left:25%;
+    }
+    .field2
+    {
+    position:absolute;
+    top:26%;
+    left:24%;
+    }
+    
+    .field3
+    {
+    position:absolute;
+    top:31%;
+    left:24%;
+    } 
+    
+     .remember_me
+    {
+    position:absolute;
+    top:31%;
+    left:32%;
+    } 
+    .field4
+    {
+    position:absolute;
+    top:36%;
+    left:24%;
+    } 
+    .field5
+    {
+    position:absolute;
+    top:41%;
+    left:24%;
+    } 
+    .field6
+    {
+    position:absolute;
+    top:46%;
+    left:24%;
+    } 
+    .field7
+    {
+    position:absolute;
+    top:51%;
+    left:24%;
+    } 
+    .even
+    {
+    background-color:red;
+    } 
+    
+    .odd
+    {
+    background-color:pink;
+    }

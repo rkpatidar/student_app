@@ -1,0 +1,34 @@
+<%= form_for @book, :url => { :action => "create"},:method =>"post",:html => {:class => "nifty_form"} do |f| %>
+
+  <div class="form_content">
+    <h2 >Enter Details Here</h2>
+    <div class="field1"> 
+      <%= f.label :book_name %>
+    </div>
+    <div id="user">
+      <%= f.text_field :book_name %>
+    </div>
+    <div class="field2"> 
+      <%= f.label :author %>
+    </div>
+    <div id="password">
+      <%= f.text_field :author %>
+    </div>
+    <div class="field3"> 
+      <%= f.label :edition %>
+    </div>
+    <div id="role">
+      <%= f.text_field :edition %>
+    </div>
+    <div class="field4">
+      <%= f.label :publisher%>
+    </div>
+    <div id="email">
+      <%= f.text_field :publisher %>    
+    </div>
+    <div id="actions">
+      <%= f.submit %>
+    </div>
+  </div> 
+<%end%>
+

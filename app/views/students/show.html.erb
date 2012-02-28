@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+<table border=1 align="center">
+  <tr>
+    <td><b>User:</b></td>
+    <td> <%= @student.user %></td>
+  </tr>
+
+  <tr>
+    <td><b>Password:</b></td>
+    <td>  <%= @student.password %></td>
+  </tr>
+
+  <tr>
+    <td><b>Role:</b></td>
+    <td><%= @student.role %></td>
+  </tr>
+
+  <tr>
+    <td><b>First name:</b></td>
+    <td>    <%= @student.first_name %></td>
+  </tr>
+
+  <tr>
+    <td><b>Last name:</b></td>
+    <td>  <%= @student.last_name %></td>
+  </tr>
+
+  <tr>
+    <td><b>Address:</b></td>
+    <td>  <%= @student.address %></td>
+  </tr>
+
+  <tr>
+    <td><b>College:</b></td>
+    <td>  <%= @student.college %></td>
+  </tr>
+
+  <tr>
+    <td><b>Email:</b></td>
+    <td>  <%= @student.email %></td>
+  </tr>
+
+  <tr>
+    <td colspan=2><b><%= link_to 'Edit', edit_student_path(@student) %></b></td>
+  </tr>
+
+</table>
+
+
+
